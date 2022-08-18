@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="535.0" prefWidth="853.0" style="-fx-background-color: a2d2ff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignInController">
+    <children>
+        <ImageView fitHeight="451.0" fitWidth="484.0" layoutX="-57.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/360_F_339709192_k6PWV7DqPCkhXBsmanByE5LTEwoJLstw-removebg-preview.png" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="443.0" layoutY="53.0" prefHeight="441.0" prefWidth="362.0" style="-fx-background-color: white;">
+            <children>
+                <Label layoutX="156.0" layoutY="33.0" prefHeight="23.0" prefWidth="89.0" text="Login" textFill="#ab5858">
+                    <font>
+                        <Font name="Serif Bold" size="23.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="txtUsername" labelFloat="true" layoutX="39.0" layoutY="149.0" onKeyPressed="#UsernameKeyPress" prefHeight="25.0" prefWidth="284.0" promptText="Username" />
+                <JFXPasswordField fx:id="pwdPassword" labelFloat="true" layoutX="39.0" layoutY="204.0" onKeyPressed="#PasswordKeyPress" prefHeight="25.0" prefWidth="284.0" promptText="Password" />
+                <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="135.0" layoutY="263.0" onAction="#btnLoginOnAction" prefHeight="35.0" prefWidth="104.0" style="-fx-background-color: #3a86ff;" text="Login" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </JFXButton>
+                <Label fx:id="lblOnAction" layoutX="113.0" layoutY="322.0" text="Haven't account? Create one" textFill="#2ca12e" underline="true">
+                    <font>
+                        <Font name="System Italic" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
